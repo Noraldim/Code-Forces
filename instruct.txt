@@ -1,0 +1,5 @@
+split == > if there is space between the number 1 2 3 4 ==> will be list
+strip == > if there is no space between the number 1234 ==> will be list
+
+i=1; for f in *.jpg; do [ -f "$f" ] && mv "$f" "$i.tmp.jpg" && ((i++)); done; i=1; for f in *.tmp.jpg; do mv "$f" "$i.jpg"; ((i++)); done
+
